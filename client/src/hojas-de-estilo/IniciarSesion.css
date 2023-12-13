@@ -1,0 +1,129 @@
+/* Contenedor principal */
+.inses__main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 1em;
+  background-color: #F9F011;
+}
+
+/* Header */
+.inses__header {
+  margin: 1em auto 2em;
+}
+
+.inses__header__titulo {
+  font-size: 1.5em;
+  color: #000;
+}
+
+/* Contenedor de formulario */
+.inses__contenedor {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Formulario de iniciar sesion */
+.inses__contenedor__form {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.inses__contenedor__form__label {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.inses__contenedor__form__campo {
+  margin: 1em 0;
+  height: 2.4em;
+  padding-left: 0.5em;
+  background-color: #000;
+  border: none;
+  font-size: 1em;
+  color: #fff;
+}
+
+.inses__contenedor__form__enlace {
+  margin-top: 1em;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #294F9A;
+}
+
+.enlace-registro {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+.inses__contenedor__form__nocerrarsesion {
+  user-select: none;
+  margin: 0 0 1em;
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+.inses__contenedor__form__nocerrarsesion__check {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  margin-right: 1em;
+}
+
+.inses__contenedor__form__boton {
+  cursor: pointer;
+  display: block;
+  margin: 0 auto 0.5em;
+  width: 90%;
+  padding: 0.4em 0;
+  border: #fb0a0a 3px inset;
+  background-color: #EB1E1E;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Separador */
+.inses__contenedor__separador {
+  width: 100%;
+  height: 10px;
+  background-color: #000;
+  margin: 0 auto;
+  border: none;
+  
+}
+
+
+/* Boton para iniciar sesion con google */
+.inses__contenedor__insesgoogle {
+  cursor: pointer;
+  display: block;
+  margin: 0.5em auto 0;
+  width: 90%;
+  padding: 0.4em 0;
+  border: #c6e6e6 4px inset;
+  background-color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Diseño para computadoras o tablets anchas */
+@media (min-width: 800px) {
+  /* Contenedor principal */
+  .inses {
+    padding: 2em 4em;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+
+  .inses__main {
+    height: 550px;
+  }
+}

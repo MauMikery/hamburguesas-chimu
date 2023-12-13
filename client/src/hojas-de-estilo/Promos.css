@@ -1,0 +1,26 @@
+/* contenedor de titulo*/
+/*contenedor principal de la pagina promos*/
+.promos__main{
+max-width: 900px;
+margin: 0 auto;
+
+background-color:#78591A;
+}
+
+.promos__header{
+  margin: 32px;
+color: #fff;
+ 
+}
+
+.promos__header__titulo{
+text-align: center;
+}
+/*contenedor de promociones*/
+.promos__promo{
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}

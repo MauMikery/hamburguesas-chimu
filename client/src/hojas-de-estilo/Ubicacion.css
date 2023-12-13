@@ -1,0 +1,29 @@
+.Ubicaciones__main{
+max-width: 1000px;
+height: 70vh;
+margin: 0 auto;
+background-color:#78591A;  
+}
+.Ubicaiones__header{
+  margin: 32px;
+  color: #fff;
+}
+
+.Ubicaciones__header__titulo{
+  text-align: center;
+}
+
+
+.Ubicaciones__Ubicacion{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 65vh;
+}
+
+.Ubicacion__frame{
+  width: 80%;
+  height: 100%;
+  cursor: pointer
+}

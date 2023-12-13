@@ -1,0 +1,21 @@
+/*Reglas para tipografia kavoon*/
+@font-face {
+  font-family: kavoon;
+  src: url(Kavoon-Regular.ttf) format('truetype');
+}
+
+/*Reglas para tipografia Lato*/
+@font-face {
+  font-family: lato;
+  src: url(Lato-Regular.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+/*Reglas para tipografia Lato*/
+@font-face {
+  font-family: lato;
+  src: url(Lato-Bold.ttf) format('truetype');
+  font-style: normal;
+  font-weight: bold;
+}

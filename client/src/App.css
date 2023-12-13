@@ -1,0 +1,13 @@
+/* Para que el contenido se vea igual en todos los
+navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-size: 16px;
+  background-color: #78591a; 
+}
+

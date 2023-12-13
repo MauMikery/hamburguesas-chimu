@@ -1,0 +1,183 @@
+/* Contenedor principal del componente */
+.menu-enlaces {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 12vh;
+  margin: 0 auto;
+  background-color: #E49216;
+}
+
+/* Boton mostrar para movile */
+.menu-enlaces__boton-mostrar {
+  display: none;
+}
+
+.boton-mostrar__imagen {
+  max-width: 100%;
+}
+
+/*Logo*/
+.menu-enlaces__logo {
+  display: flex;
+  max-width: 150px;
+  height: 100%; 
+  position: relative;
+  top: 0;
+  border: none;
+}
+
+.logo__imagen {
+  max-width: 100%;
+  height: 100%; 
+  object-fit: cover;
+}
+
+/* Div con enlaces a las diferentes paginas */
+.menu-enlaces__enlaces-paginas{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+}
+
+/*Enlaces del componente*/
+.menu-enlaces__enlaces-paginas a {
+  text-decoration: none;
+  font-family: lato, sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  color: #ffffff;
+  padding: 0.3em 0.5em;
+}
+
+.enlaces-paginas__enlace-home {
+  display: none;
+}
+
+/*Clase para cambiar el estilo del enlace cuando se este en el*/
+.enlace-activo {
+  background-color: #251a089d;
+  border-radius: 1em; 
+}
+
+/* Para el enlace a la sesion */
+.enlaces-paginas__enlace-sesion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.enlace-sesion__imagen {
+  margin-right: 0.2em;
+  max-width: 100%;
+  height: 100%;
+}
+
+.enlace-sesion-activo {
+  background-color: #251a089d;
+  border-radius: 1em;
+  padding: 0.3em 1em; 
+}
+
+/* Para el enlace del carrito */
+.menu-enlaces__enlace-carrito {
+  display: block;
+  width: 10%;
+  height: 2.5em;
+}
+
+.enlace-carrito__imagen {
+  max-width: 100%;
+  height: 100%;
+  transform: scaleX(-1);
+}
+
+/* MOVILE */
+@media (max-width: 820px) {
+  /* Contenedor barra de navegacion superior */
+  .menu-enlaces {
+    justify-content: space-around;
+  }
+  
+  /* Boton para mostrar enlaces */
+  .menu-enlaces__boton-mostrar {
+    display: block;
+    width: 8%;
+    cursor: pointer;
+  }
+
+  /* Logo para ir a home */
+  .menu-enlaces__logo {
+    width: 30%;
+  }
+  
+  /*Enlaces a las diferentes paginas*/
+  .menu-enlaces__enlaces-paginas {
+    display: none;
+    position: absolute;
+    top: 12%;
+  }
+
+  /*Elemento a de los enlaces*/
+  .menu-enlaces__enlaces-paginas a {
+    width: 100%;
+    margin-top: -70px;
+    border-bottom: 3px dotted #fff;
+    font-size: 1em;
+    color: #fff;
+  }
+
+  /* Clase para mostrar los diferentes enlaces de enlaces-paginas*/
+  .mostrar-enlaces-paginas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+    background-color: #000;
+  }
+
+  /* Enlace para ir a home movil */
+  .enlaces-paginas__enlace-home {
+    display: block;
+  }
+
+  /*Clase para cambiar estilo cuando se este la ruta del enlace*/
+  .enlace-activo {
+    border-radius: 0;
+    background-color: #E49216;
+  }
+  
+  /* Enlace a iniciar sesion */
+  .enlaces-paginas__enlace-sesion {
+    height: auto;
+  } 
+  
+  .enlace-sesion-activo {
+    border-radius: 0;
+    background-color: #E49216;
+  }
+
+  .enlace-sesion__imagen{
+    display: none;
+  }
+  
+  /* Enlace para ir a ver el carrito de compras*/
+  .menu-enlaces__enlace-carrito {
+    width: 10%;
+  }
+}
+
+/*Para dispositivos con resolución muy pequeña*/
+@media (max-width:480px){
+  /*Ocultamos el logo*/
+  .menu-enlaces__logo {
+    display: none;
+  }
+  .menu-enlaces__enlace-carrito{
+    width: 15%;
+  }
+}

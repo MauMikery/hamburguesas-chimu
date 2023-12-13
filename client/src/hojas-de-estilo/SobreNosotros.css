@@ -1,0 +1,156 @@
+.sn__main {
+  font-size: 12px;
+}
+
+/* Titulo */
+.sn__header {
+  margin: 2em;
+}
+.sn__header__titulo {
+  font-size: 2em;
+  text-align: center;
+  color: #fff;
+}
+
+/* Secciones de informacion */
+.sn__info {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Seccion de informacion */
+.sn__info__article {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1em;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Seccion uno de informacion */
+.sn__info__article:nth-child(1){
+  background-color: #fff;
+  color: #000;
+}
+
+/* Seccion dos de informacion */
+.sn__info__article:nth-child(2) {
+  flex-direction: row-reverse;
+
+}
+/* Imagen de la informacion */
+.sn__info__article__img {
+  width: 50%;
+}
+/* Parrafo de la informacion */
+.sn__info__article__parrafo {
+  width: 50%;
+  padding: 1em;
+  font-size: 1.2em;
+}
+/* Contenedor de los diferentes servicios del e-commerce */
+.sn__info__article-servicios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em;
+  background-color: #fff;
+  border-radius: 1em;
+}
+
+.sn__info__article-servicios__iconos {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin-bottom: 1em;
+}
+
+.sn__info__article-servicios__icono {
+  display: block;
+  width: 20%;
+}
+
+.sn__info__article-servicios__parrafo {
+  font-size: 1.4em;
+  text-align: center;
+}
+
+/* Formulario para contactarnos */
+.sn__contacto {
+  margin: 1em auto; 
+  max-width: 800px;
+}
+
+.sn__contacto__form {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  border-radius: 1em;
+  background-color: #000;
+  color: #fff;
+}
+
+.sn__form__titulo {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.sn__form__campo {
+  width: 80%;
+  height: 3em;
+  margin-bottom: 1em;
+  padding: 0 0.5em;
+  border-radius: 0.5em;
+  border: none;
+  font-size: 1.2em;
+}
+
+.sn__form__mensaje {
+  width: 80%;
+  height: 3em;
+  margin-bottom: 1em;
+  padding: 0.2em 0.5em;
+  font-size: 1.2em;
+  font-family: Lato, sans-serif;
+}
+
+.sn__form__boton {
+  cursor: pointer;
+  width: 60%;
+  font-size: 1.4em;
+  padding: 0.5em;
+  border-radius: 0.3em;
+  border: outset;
+  background-color: #FF3131;
+  color: #fff;
+  
+}
+
+@media (max-width: 520px) {
+  .sn__info__article__img {
+    width: 100%;
+  }
+  
+  .sn__info__article__parrafo {
+    width: 100%;
+    font-size: 1.4em;
+  }
+}
+
+@media (min-width: 800px) {
+  .sn__info__article__parrafo {
+    font-size: 1.5em;
+  }
+
+  .sn__info__article-servicios__parrafo {
+    font-size: 1.5em;
+    text-align: center;
+  }
+}
